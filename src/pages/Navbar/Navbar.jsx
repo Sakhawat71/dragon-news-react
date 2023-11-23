@@ -1,8 +1,8 @@
 
 const Navbar = () => {
     return (
-        <div>
-            <h1 className="font-oldEng text-3xl">Navbar</h1>
+        <div className="border-2 my-4">
+            <h1 className=" text-3xl">Navbar</h1>
         </div>
     );
 };

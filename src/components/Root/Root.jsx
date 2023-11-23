@@ -1,10 +1,9 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "../../pages/Navbar/Navbar";
+
 
 const Root = () => {
     return (
-        <div>
-            <Navbar></Navbar>
+        <div className="max-w-7xl font-poppins mx-auto">
             <Outlet></Outlet>
         </div>
     );
