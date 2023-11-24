@@ -42,7 +42,7 @@ const RightNav = () => {
 
             <div className="bg-[#F3F3F3] py-4 px-2 rounded-lg">
                 <h3 className="text-dark2 font-semibold text-xl">Q-Zone</h3>
-                <figure>
+                <figure className="flex flex-col justify-center">
                     <img src={qZ1} alt="" />
                     <img src={qZ2} alt="" />
                     <img src={qZ3} alt="" />
