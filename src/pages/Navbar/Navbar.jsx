@@ -42,7 +42,7 @@ const Navbar = () => {
                         <img alt="Tailwind CSS Navbar component" src={userlogo} />
                     </div>
                 </label>
-                <Link className="bg-dark2 py-2 px-6 text-[#ffff]">
+                <Link to="/login" className="bg-dark2 py-2 px-6 text-[#ffff]">
                     <button>Login</button>
                 </Link>
             </div>
