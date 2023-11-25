@@ -12,7 +12,7 @@ const News = () => {
         <div>
             <Header></Header>
             <Navbar></Navbar>
-            <div className="grid grid-cols-4">
+            <div className="md:grid grid-cols-4">
 
                 <div className="col-span-3">
                     <p>{id}</p>
