@@ -3,9 +3,15 @@ import Navbar from "../../pages/Navbar/Navbar";
 import LeftNav from "../Shared/LeftNav/LeftNav";
 import RightNav from "../Shared/RightNav/RightNav";
 import BreakingNews from "./BreakingNews";
+import { useLoaderData } from "react-router-dom";
+import NewsCard from "../NewsCard/NewsCard";
 
 
 const Home = () => {
+
+    const allNews = useLoaderData()
+    // console.log(\)
+
     return (
         <div>
             <Header></Header>
@@ -18,14 +24,21 @@ const Home = () => {
                 <div> <LeftNav></LeftNav> </div>
 
                 <div className="lg:col-span-2  border-2">
-                    <p className="text-3xl">news comming soonn</p>
+                    <h4 className="font-semibold text-xl text-dark2 mb-10">Dragon News Home</h4>
+                    {
+                        allNews.map(news => <NewsCard 
+                            key={news._id}
+                            news={news}
+                            ></NewsCard>)
+                    }
+
                 </div>
 
                 <div> <RightNav></RightNav> </div>
 
             </div>
         </div>
-        
+
     );
 };
 
