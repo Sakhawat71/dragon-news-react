@@ -26,10 +26,10 @@ const Home = () => {
                 <div className="lg:col-span-2  border-2">
                     <h4 className="font-semibold text-xl text-dark2 mb-10">Dragon News Home</h4>
                     {
-                        allNews.map(news => <NewsCard 
+                        allNews?.map(news => <NewsCard 
                             key={news._id}
                             news={news}
-                            ></NewsCard>)
+                        ></NewsCard>)
                     }
 
                 </div>
